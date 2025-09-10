@@ -65,11 +65,14 @@ function App() {
                   placeholder="First Name"
                   value={formik.values.firstName}
                   onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}></TextField>
+                  onBlur={formik.handleBlur}
+                  fullWidth></TextField>
 
-                {formik.errors.firstName && formik.touched.firstName && (
-                  <div className="error">{formik.errors.firstName}</div>
-                )}
+                <div className="error">
+                  {formik.errors.firstName && formik.touched.firstName
+                    ? formik.errors.firstName
+                    : "\u00A0"} {/* Non-breaking space keeps the height reserved */}
+                </div>
               </div>
               <div className="input-container">
                 <TextField
@@ -79,12 +82,16 @@ function App() {
                   placeholder="Last Name"
                   value={formik.values.lastName}
                   onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}></TextField>
+                  onBlur={formik.handleBlur}
+                  fullWidth></TextField>
 
-                {formik.errors.lastName && formik.touched.lastName && (
-                  <div className="error">{formik.errors.lastName}</div>
-                )}
-
+                <div className="error">
+                  {formik.errors.lastName && formik.touched.lastName
+                    ? formik.errors.lastName
+                    : "\u00A0"} {/* Non-breaking space keeps the height reserved */}
+                </div>
+              </div>
+              <div className='input-container'>
                 <TextField
                   type="email"
                   className="email"
@@ -92,11 +99,14 @@ function App() {
                   placeholder="Email Address"
                   value={formik.values.email}
                   onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}></TextField>
+                  onBlur={formik.handleBlur}
+                  fullWidth></TextField>
 
-                {formik.errors.email && formik.touched.email && (
-                  <div className="error">{formik.errors.email}</div>
-                )}
+                <div className="error">
+                  {formik.errors.email && formik.touched.email
+                    ? formik.errors.email
+                    : "\u00A0"} {/* Non-breaking space keeps the height reserved */}
+                </div>
               </div>
               <div className="input-container">
                 <TextField
@@ -106,11 +116,14 @@ function App() {
                   placeholder="Password"
                   value={formik.values.password}
                   onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}></TextField>
+                  onBlur={formik.handleBlur}
+                  fullWidth></TextField>
 
-                {formik.errors.password && formik.touched.password && (
-                  <div className="error">{formik.errors.password}</div>
-                )}
+                <div className="error">
+                  {formik.errors.password && formik.touched.password
+                    ? formik.errors.password
+                    : "\u00A0"} {/* Non-breaking space keeps the height reserved */}
+                </div>
               </div>
 
               <Button type="submit">CLAIM YOUR FREE TRIAL</Button>

@@ -1,12 +1,35 @@
-# React + Vite
+# Intro Component with Sign-Up Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a responsive **Intro Component with a Sign-Up Form**, built with **React**, **Formik**, **Yup**, and **Material-UI (MUI)**. It demonstrates:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern form handling with **Formik**.
+- Form validation using **Yup**.
+- Compact and responsive design using **CSS** and **MUI components**.
+- Proper error handling and styling for a polished user experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- **Responsive layout** for both mobile and desktop.  
+- **Client-side validation**:
+  - First Name and Last Name: required, min 2 / max 50 characters.  
+  - Email: required, must be a valid email address.  
+  - Password: required, min 6 characters.  
+- **Error messages**:
+  - Red, small, left-aligned, and compact.
+  - Consistent spacing regardless of validation state.
+- **Clean design** with a background image and overlay content.  
+- **Reusable MUI components** for inputs and buttons.
+
+---
+
+## Technologies Used
+
+- **React** – UI library for building components.  
+- **Formik** – For handling form state and submission.  
+- **Yup** – For schema-based validation.  
+- **Material-UI (MUI)** – For input and button components.  
+- **CSS** – For custom styling and layout.  
