@@ -102,8 +102,10 @@ body {
 .input-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.25rem;
-  padding-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  /* slightly bigger space between inputs */
+  padding-top: 0;
+  /* optional, can remove */
 }
 
 @media (min-width: 768px) {
